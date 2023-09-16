@@ -42,8 +42,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
-  max-width: 100%;
   width: var(--max-width);
+  max-width: 100%;
 }
 
 .card {
@@ -72,6 +72,12 @@
   max-width: 30ch;
 }
 
+.circular-small-image {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  border-radius: 50%; /* Create a circular shape */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+}
 .center {
   display: flex;
   justify-content: center;
@@ -226,4 +232,124 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+/* Define custom CSS classes */
+.custom-card {
+  /* Your custom card styles here */
+  /* Example styles: */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.custom-row {
+  /* Your custom row styles here */
+  /* Example styles: */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.custom-col-md-4 {
+  /* Your custom column styles for medium-sized screens (md) here */
+  /* Example styles: */
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.custom-col-md-8 {
+  /* Your custom column styles for medium-sized screens (md) here */
+  /* Example styles: */
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.custom-img-fluid {
+  /* Your custom image styles here */
+  /* Example styles: */
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-card-body {
+  /* Your custom card body styles here */
+  /* Example styles: */
+  padding: 10px;
+}
+
+.custom-card-title {
+  /* Your custom card title styles here */
+  /* Example styles: */
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.custom-card-text {
+  /* Your custom card text styles here */
+  /* Example styles: */
+  font-size: 1rem;
+}
+
+.custom-text-success {
+  /* Your custom text styles for 'success' status here */
+  /* Example styles: */
+  color: green;
+}
+
+.custom-text-danger {
+  /* Your custom text styles for 'danger' status here */
+  /* Example styles: */
+  color: red;
+}
+
+.characterDetailContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.characterImageContainer {
+  flex: 1;
+  text-align: center;
+}
+
+.characterImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.characterInfoContainer {
+  flex: 2;
+  padding: 20px;
+}
+
+.characterName {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.characterAttributes {
+  font-size: 16px;
+}
+
+.characterAttributes p {
+  margin: 5px 0;
+}
+
+.character-statistics {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
 }
